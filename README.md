@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Frontend Mentor - Advice generator app
 
 ![Design preview for the Advice generator app coding challenge](./design/desktop-preview.jpg)
@@ -91,3 +92,6 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+=======
+# advice-generator-app-main
+>>>>>>> origin/main
