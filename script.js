@@ -17,7 +17,7 @@ diceBtn.addEventListener('click', () => {
 
         // Code for the "Advice #"
         const AdviceNbr = adviceData.slip;
-        numberAdv.innerHTML = `Advice # ${AdviceNbr.id}`
+        numberAdv.innerHTML = `Advice #${AdviceNbr.id}`
         
         
         console.log(AdviceObj);

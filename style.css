@@ -5,7 +5,7 @@
     --clr-button: #ba8088;
 
     --fs-small: 0.85rem;
-    --fs-medium: 1rem;
+    --fs-medium: 1.25rem;
     --fs-big: 1.5rem;
 }
 
@@ -46,6 +46,7 @@ h4{
     justify-content: center;
     align-items: center;
     background-color: var(--clr-button);
+    transition-duration: 2s;
 }
 
 .container__advice{
@@ -56,6 +57,7 @@ h4{
     text-transform: uppercase;
     letter-spacing: 0.5em;
     font-size: var(--fs-small);
+    transition-duration: 2s;
 }
 
 p{
@@ -63,6 +65,7 @@ p{
     font-weight: 800;
     margin: 0rem 0rem 1rem 0rem;
     text-align: center;
+    transition-duration: 2s;
 }
 
 /* --------------- Picture ------------- */
@@ -70,6 +73,7 @@ p{
 picture{
     display: flex;
     flex-direction: column;
+    transition-duration: 2s;
 }
 
 .icon-dice{
@@ -79,9 +83,38 @@ picture{
     padding: 1rem;
     border-radius: 100vmax;
     top: 465px;
-    cursor: pointer
+    cursor: pointer;
+    transition: transform;
 }
 
-.icon-dice:active{
-    transform: rotate(45deg);
+.icon-dice:active,
+.icon-dice::before,
+.icon-dice::after{
+    transform: rotate(360deg);
+    transition-duration: 500ms;
+}
+
+@media (min-width: 700px) {
+    .icon-dice{
+        top: 680px;
+    }
+
+    h4{
+        font-size: var(--fs-medium);
+    }
+
+    .container{
+        height: 40svh;
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .icon-dice{
+        top: 595px;
+    }
+
+    h4{
+        font-size: var(--fs-big );
+    }
 }
