@@ -25,7 +25,6 @@ body{
     place-content: center;
     width: auto;
     background-color: var(--clr-background);
-
 }
 
 p{
@@ -92,6 +91,10 @@ picture{
 .icon-dice::after{
     transform: rotate(360deg);
     transition-duration: 500ms;
+}
+
+.icon-dice:hover{
+    box-shadow: 0 0 40px var(--clr-paragraph);
 }
 
 @media (min-width: 700px) {

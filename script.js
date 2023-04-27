@@ -1,7 +1,6 @@
 const adviceCapt = document.querySelector('#caption-advice');
+const adviceNbr = document.querySelector('#number-advice');
 const diceBtn = document.querySelector('#icon-dice');
-
-const numberAdv = document.querySelector('#number-advice');
 
 
 diceBtn.addEventListener('click', () => {
@@ -16,8 +15,8 @@ diceBtn.addEventListener('click', () => {
 
 
         // Code for the "Advice #"
-        const AdviceNbr = adviceData.slip;
-        numberAdv.innerHTML = `Advice #${AdviceNbr.id}`
+        const NumberObj = adviceData.slip;
+        adviceNbr.innerHTML = `Advice #${NumberObj.id}`
         
         
         console.log(AdviceObj);
